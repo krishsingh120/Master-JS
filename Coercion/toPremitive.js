@@ -1,7 +1,7 @@
 const obj = {
   toString() {
-    // by default give [object object]
-    return 10;
+    // by default give string of -> "[object object]"
+    return 10;  // override this method
   },
   valueOf() {
     // by default it returns same object

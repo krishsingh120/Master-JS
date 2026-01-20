@@ -17,3 +17,18 @@ y -> boolean -> false -> ToNumber -> 0
 compare => (null == 0)
 return false
 */
+
+// special rule of NaN -> NaN is NOT equal to anything -> not even itself
+console.log("NaN" == NaN);  // false
+console.log("NaN" === NaN);  // false
+
+
+let obj = {
+  x: 20,
+  valueOf() {
+    return 100;
+  },
+};
+
+console.log(99 == obj);
+console.log(100 == obj);
